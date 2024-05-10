@@ -51,7 +51,7 @@ export default class RetrieveContentLatestVersionLWC extends LightningElement {
       if (data) {     
         this.graphResult = data.uiapi.query.ContentVersion.edges.map((edge) => edge.node);
         if(this.graphResult!=''){
-			// play what you want with the results...example below:
+	// play what you want with the results...example below:
           this.linkContent='URL of your Salesforce Instance'+this.graphResult[0].ContentDocumentId.value;
           window.open(this.linkContent);
         }
