@@ -58,7 +58,7 @@ export default class RetrieveContentLatestVersionLWC extends LightningElement {
       }   
      else if(error){
         LightningAlert.open({
-            message: "Error Found: "+this.error,
+            message: "Error Found: "+error,
             theme: "error", 
             label: "Error Message", 
           });
